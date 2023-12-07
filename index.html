@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media/media.css">
+    <link rel="stylesheet" href="bootstrap/icon/bootstrap-icons.css">
+</head>
+<body>
+    <!-- bulb on/off start  -->
+   <h2>Click the button to on/off the bulb</h2>
+   <button class="btn btn-success" onclick="bulbOn()">Bulb on</button>
+   <button class="btn btn-danger" onclick="bulbOff()">Bulb off</button>
+    <img src="images/off.gif" id="img" alt="on/off">
+    <!-- bulb on/off end -->
+    <hr>
+    <!-- show date time start -->
+    <h2>SHOW curent date and time.</h2>
+    <button class="btn btn-primary" onclick="showDt()">Show</button>
+    <button class="btn btn-danger" onclick="dtHide()">Hide</button>
+    <h2 id="dt">Display</h2>
+    <!-- show date time end -->
+    <hr>
+    <!-- welcome massage start  -->
+    <h2>Start javaScript.</h2>
+    <button class="btn btn-dark" onclick="welcome()">Enter</button>
+    <h2 id="wel">Look Here.</h2>
+    <!-- welcome massage end -->
+    <hr>
+    <!-- display show/hide start -->
+    <h2>Show/Hide display.</h2>
+    <button class="btn btn-light" onclick="hideD()">Hide</button>
+    <button class="btn btn-dark" onclick="showD()">Show</button>
+    <div class="screen">
+        <h2 id="sh">
+            Display.
+        </h2>
+    </div>
+    <!-- display show/hide end -->
+    <hr>
+    <!-- outpute start  -->
+    <h2>Output</h2>
+    <button class="btn btn-primary" onclick="outPut()">click</button>
+    <p id="out">Result is:</p>
+    <!-- outpute end -->
+    <hr>
+    <!-- statement start  -->
+    <h2>Statement</h2>
+    <p id="stat"></p>
+    <!-- statement end -->
+    <hr>
+    <!-- variables start -->
+    <h2>Variables</h2>
+    <p>This example x, y, z variables.</p>
+    <h3 id="vari">Result</h3>
+    <!-- variables end -->
+    <hr>
+    <!-- constant value start  -->
+    <h2>Constant value.</h2>
+    <h3>Person1=40, Person2=32</h3>
+    <h4 id="cons">result</h4>
+    <!-- constant value end -->
+    <hr>
+    <!-- Assign Operator start  -->
+    <h2>Assign Opreator (=)</h2>
+    <p>value x=10 assign to y.</p>
+    <p id="assi">result</p>
+    <!-- Assign Operator end -->
+    <hr>
+    <!-- Add operator start -->
+    <h2>Add operator (+)</h2>
+    <p>x = 25, y = 30</p>
+    <p id="addi"></p>
+    <!-- Add operator end -->
+    <hr>
+    <!-- Multiplying start -->
+    <h2>Multiplying (*)</h2>
+    <p>Value x = 8, y = 5.</p>
+    <h2 id="mul"></h2>
+    <!-- Multiplying end -->
+    <hr>
+    <!-- Incremont start  -->
+    <h2>Increment</h2>
+    <p>x = 7, </p>
+    <h3 id="inc"></h3>
+    <!-- Incremont end -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

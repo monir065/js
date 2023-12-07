@@ -1,0 +1,12 @@
+body{
+    margin-bottom: 200px;
+}
+.screen{
+    margin-left: 20px;
+    background-color: lightblue;
+    width: 30%;
+    margin-bottom: 300px;
+}
+.screen h2{
+    padding: 100px 100px 100px 100px;
+}
