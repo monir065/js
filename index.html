@@ -3,91 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>js/jq</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media/media.css">
     <link rel="stylesheet" href="bootstrap/icon/bootstrap-icons.css">
 </head>
 <body>
-    <!-- bulb on/off start  -->
-   <h2>Click the button to on/off the bulb</h2>
-   <button class="btn btn-success" onclick="bulbOn()">Bulb on</button>
-   <button class="btn btn-danger" onclick="bulbOff()">Bulb off</button>
-    <img src="images/off.gif" id="img" alt="on/off">
-    <!-- bulb on/off end -->
-    <hr>
-    <!-- show date time start -->
-    <h2>SHOW curent date and time.</h2>
-    <button class="btn btn-primary" onclick="showDt()">Show</button>
-    <button class="btn btn-danger" onclick="dtHide()">Hide</button>
-    <h2 id="dt">Display</h2>
-    <!-- show date time end -->
-    <hr>
-    <!-- welcome massage start  -->
-    <h2>Start javaScript.</h2>
-    <button class="btn btn-dark" onclick="welcome()">Enter</button>
-    <h2 id="wel">Look Here.</h2>
-    <!-- welcome massage end -->
-    <hr>
-    <!-- display show/hide start -->
-    <h2>Show/Hide display.</h2>
-    <button class="btn btn-light" onclick="hideD()">Hide</button>
-    <button class="btn btn-dark" onclick="showD()">Show</button>
-    <div class="screen">
-        <h2 id="sh">
-            Display.
-        </h2>
-    </div>
-    <!-- display show/hide end -->
-    <hr>
-    <!-- outpute start  -->
-    <h2>Output</h2>
-    <button class="btn btn-primary" onclick="outPut()">click</button>
-    <p id="out">Result is:</p>
-    <!-- outpute end -->
-    <hr>
-    <!-- statement start  -->
-    <h2>Statement</h2>
-    <p id="stat"></p>
-    <!-- statement end -->
-    <hr>
-    <!-- variables start -->
-    <h2>Variables</h2>
-    <p>This example x, y, z variables.</p>
-    <h3 id="vari">Result</h3>
-    <!-- variables end -->
-    <hr>
-    <!-- constant value start  -->
-    <h2>Constant value.</h2>
-    <h3>Person1=40, Person2=32</h3>
-    <h4 id="cons">result</h4>
-    <!-- constant value end -->
-    <hr>
-    <!-- Assign Operator start  -->
-    <h2>Assign Opreator (=)</h2>
-    <p>value x=10 assign to y.</p>
-    <p id="assi">result</p>
-    <!-- Assign Operator end -->
-    <hr>
-    <!-- Add operator start -->
-    <h2>Add operator (+)</h2>
-    <p>x = 25, y = 30</p>
-    <p id="addi"></p>
-    <!-- Add operator end -->
-    <hr>
-    <!-- Multiplying start -->
-    <h2>Multiplying (*)</h2>
-    <p>Value x = 8, y = 5.</p>
-    <h2 id="mul"></h2>
-    <!-- Multiplying end -->
-    <hr>
-    <!-- Incremont start  -->
-    <h2>Increment</h2>
-    <p>x = 7, </p>
-    <h3 id="inc"></h3>
-    <!-- Incremont end -->
+<!-- javascript start  -->
+    <div class="container">
 
+        <h2>JavaScript.</h2>
+        <!-- bulb on/off  -->
+        <h2>Bulb on/off</h2>
+        <button onclick="bulbOn()">Trun on</button>
+        <button onclick="bulbOff()">Trun off</button>
+        <img id="my_img" src="images/off.gif">
+        <!-- bulb on/off end -->
+        <hr>
+        <!-- show date time start -->
+        <h2>SHOW curent date and time.</h2>
+        <button class="btn btn-primary" onclick="showDt()">Show</button>
+        <button class="btn btn-danger" onclick="dtHide()">Hide</button>
+        <h2 id="dt">Display</h2>
+        <!-- show date time end -->
+        <hr>
+        <!-- welcome massage start  -->
+        <h2>Start javaScript.</h2>
+        <button class="btn btn-dark" onclick="welcome()">Enter</button>
+        <h2 id="wel">Look Here.</h2>
+        <!-- welcome massage end -->
+        <hr>
+        <!-- display show/hide start -->
+        <h2>Show/Hide display.</h2>
+        <button class="btn btn-light" onclick="hideD()">Hide</button>
+        <button class="btn btn-dark" onclick="showD()">Show</button>
+        <div class="screen">
+            <h2 id="sh">
+                Display.
+            </h2>
+        </div>
+        <!-- display show/hide end -->
+        <hr>
+        <!-- outpute start  -->
+        <h2>Output</h2>
+        <button class="btn btn-primary" onclick="outPut()">click</button>
+        <p id="out">Result is:</p>
+        <!-- outpute end -->
+        <hr>
+        <!-- statement start  -->
+        <h2>Statement</h2>
+        <p id="stat"></p>
+        <!-- statement end -->
+        <hr>
+        <!-- variables start -->
+        <h2>Variables</h2>
+        <p>This example x, y, z variables.</p>
+        <h3 id="vari">Result</h3>
+        <!-- variables end -->
+        <hr>
+        <!-- constant value start  -->
+        <h2>Constant value.</h2>
+        <h3>Person1=40, Person2=32</h3>
+        <h4 id="cons">result</h4>
+        <!-- constant value end -->
+        <hr>
+        <!-- Assign Operator start  -->
+        <h2>Assign Opreator (=)</h2>
+        <p>value x=10 assign to y.</p>
+        <p id="assi">result</p>
+        <!-- Assign Operator end -->
+        <hr>
+        <!-- Add operator start -->
+        <h2>Add operator (+)</h2>
+        <p>x = 25, y = 30</p>
+        <p id="addi"></p>
+        <!-- Add operator end -->
+        <hr>
+        <!-- Multiplying start -->
+        <h2>Multiplying (*)</h2>
+        <p>Value x = 8, y = 5</p>
+        <h2 id="mul"></h2>
+        <!-- Multiplying end -->
+        <hr>
+        <!-- Incremont start  -->
+        <h2>Increment</h2>
+        <p>x = 7 </p>
+        <h3 id="inc"></h3>
+        <!-- Incremont end -->
+        <hr>
+        <!-- array start  -->
+        <h2>Javascript array</h2>
+        <p id="arra"></p>
+        <!-- array end -->
+        <hr>
+        <!-- Number start  -->
+        <h2>JavaScript Number</h2>
+        <p id="num"></p>
+        <!-- Number end -->
+        <hr>
+        <!-- Math stert  -->
+        <h2>JavaScript math</h2>
+        <p id="pi"></p>
+
+        <!-- Math end -->
+        <hr>
+        <!-- if start  -->
+        <h2>if statement</h2>
+        <p id="me"> Good Everyone</p>
+        <hr>
+        <!-- Object start  -->
+        <h2>JavaScript Object</h2>
+        <p id="ob"></p>
+
+        <!-- Object end-->
+        <hr>
+        <!-- Event start -->
+        <h2>Javascript event </h2>
+        <button onclick="evn()">The time is</button>
+        <p id="ev"></p>
+        <!-- Event end -->
+        <hr>
+        <!-- faid   -->
+        <h2>faid </h2>
+        <button >Hide</button>
+        <button >show</button>
+        <button >Toogle</button>
+        <h3>This is faid section.</h3>
+        <hr>
+        <!-- booleans start -->
+        <h2>Boolieans</h2>
+        <p>Display the value of (10>9):</p>
+        <p id="boolens"></p>
+
+        <hr>
+        <!-- window navigator object -->
+        <h2>window navigator object</h2>
+        <h3>The language property</h3>
+        <p id="navigator"></p>
+
+        <hr>
+
+        <!-- Confirm box  -->
+        <h2>Confirm Box</h2>
+        <button onclick="myConfirm()">Try it</button>
+        <p id="confirm"></p>
+        
+        <hr>
+        <!-- prompt strt  -->
+        <h2>Javascript prompt</h2>
+        <button onclick="myPrompt()">Click</button>
+        <p id="prompt"></p>
+        <hr>
+        <!-- line breaks in a popup box  -->
+        <h2>Line breaks popup box</h2>
+        <p>Line breaks in a popup box</p>
+        <button onclick="myPop()">Try it</button>
+
+        <hr>
+        <!-- Timing start  -->
+        <h2>Timing</h2>
+        <p>Click "Try it ". Wait 3 seconds, and the page will alert "Hello".</p>
+        <button onclick="setTimeout(myTiming, 3000);">Try it</button>
+</div>
+    <!-- javascript end  -->
+<hr>
+<!-- jQuery start  -->
+    <!-- toggle  -->
+    <div class="container">
+        <h2 class="text-center">Jquery start </h2>
+        <div class="ques">
+            <p>Lorem ipsum dolor sit amet?</p>
+        </div>
+        <div class="ans">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem eaque non mollitia, amet dolorum hic doloribus nemo? Totam, ea eum.</p>
+        </div>
+    <hr>
+    <h2>click the button to show an alert</h2>
+    <button class="btn btn-dark" id="btn">Show alert</button>
+  
+   <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, exercitationem?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+  
+   <hr>
+   <!-- down panel  -->
+  
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+   
+<hr>
+<!-- animation  -->
+   
+    <button class="ani_btn">Start animation</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas, obcaecati exercitationem reprehenderit cum ea fugit porro eaque eius reiciendis!</p>
+    <div class="animation"></div>
+   </div>
+<hr>
+   <!-- selector stat  -->
+   <div class="container cus_con">
+    <h2>Selector</h2>
+   <button id="bt">click me</button>
+   <p class="par">This is paragtaph</p>
+   </div>
+<hr>
+   <!-- event start  -->
+    <p class="evnt">If you click on me, I will disappear.</p>
+    <p class="evnt">Click me </p>
+    <p class="evnt">Click me too</p>
+     <hr>
+    <!-- stop start  -->
+    <button id="sto">stop</button>
+
+    <div id="flip1">Click to slide</div>
+    <div id="panel">Hello world!</div>
+    <hr>
+    <!-- coll back  -->
+    <button class="btn c_bt">Hide</button>
+    <p class="call_b">This is a page</p>
+
+    <hr>
+    <!-- Changing  -->
+    <div class="container">
+        <p id="cha">jQuery is fun</p>
+        <button class="chang">Click me</button>
+    </div>
+    <hr>
+    <!-- shoe user input value  -->
+    <div class="container">
+        <p class="n">Name:
+            <input type="text" id="text" value="User name">
+        </p>
+        <button class="bt_c">click</button>
+    </div>
+    <hr>
+     <!-- faid   -->
+    <div class="container">
+        
+    <h2>faid </h2>
+    <button id="hid" >Hide</button>
+    <button id="sho" >show</button>
+    <button id="toog" >Toogle</button>
+    <h3 id="fai">This is faid section.</h3>
+    </div>
+  
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
